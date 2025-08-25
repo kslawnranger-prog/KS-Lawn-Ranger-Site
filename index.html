@@ -16,8 +16,8 @@
   <link rel="icon" href="images/logo.jpg" />
 
   <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com">
-    
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
     // Smooth scroll for all internal anchor links
     // Back to Top button logic
     const backBtn = document.getElementById('backToTop');
@@ -34,7 +34,6 @@
     window.addEventListener('scroll', onScrollUI);
     window.addEventListener('load', onScrollUI);
     backBtn?.addEventListener('click', () => { window.scrollTo({top:0, behavior:'smooth'}); });
-    });
 
     document.querySelectorAll('a[href^="#"]').forEach(link => {
       link.addEventListener('click', function(e){
@@ -62,7 +61,6 @@
       // Close on Escape
       window.addEventListener('keydown', (e)=>{ if(e.key==='Escape') close(); });
     })();
-
   </script>
 
   <!-- Google Analytics 4 -->
