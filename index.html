@@ -195,44 +195,187 @@
   </section>
 
   <section id="contact" class="py-14 md:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-6 items-start">
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold">Let’s get your yard dialed in</h2>
-          <div class="mt-6 space-y-2 text-gray-800">
-            <div class="flex items-center gap-2">📞 <a class="hover:underline" href="tel:+19132217981">(913) 221-7981</a></div>
-            <div class="flex items-center gap-2">✉️ <a class="hover:underline" href="mailto:kslawnranger@gmail.com">kslawnranger@gmail.com</a></div>
-            <div class="flex items-center gap-2">🕒 Monday–Saturday 7:00 AM – 6:00 PM</div>
-            <div class="flex items-center gap-2">📍 Manhattan • Wamego • St. George • Alma • Junction City</div>
-          </div>
-        </div>
-        <div class="rounded-2xl border bg-white p-6 shadow-sm">
-          <form id="contactForm" class="grid gap-3" novalidate>
-            <input class="border rounded-xl p-3" name="name" placeholder="Full Name" required />
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <input class="border rounded-xl p-3" name="email" placeholder="Email" type="email" required />
-              <input class="border rounded-xl p-3" name="phone" placeholder="Phone" />
-            </div>
-            <select class="border rounded-xl p-3" name="service">
-              <option>Service Interested In</option>
-              <option>Lawn Mowing & Edging</option>
-              <option>Aeration</option>
-              <option>Overseeding</option>
-              <option>Mulch / Rock</option>
-              <option>Sod Installation</option>
-              <option>Cleanups & Haul‑Away</option>
-              <option>Snow Removal</option>
-              <option>Hardscaping</option>
-            </select>
-            <textarea class="border rounded-xl p-3 min-h-[120px]" name="details" placeholder="Project details, address, and ideal timing"></textarea>
-            <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
-            <button type="submit" class="rounded-xl px-5 py-3 bg-emerald-700 text-white hover:bg-emerald-800">Send Message</button>
-            <p id="formMsg" class="text-sm mt-2"></p>
-          </form>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+      <!-- Left: business info -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold">Let’s get your yard dialed in</h2>
+        <div class="mt-6 space-y-2 text-gray-800">
+          <div class="flex items-center gap-2">📞 <a class="hover:underline" href="tel:+19132217981">(913) 221-7981</a></div>
+          <div class="flex items-center gap-2">✉️ <a class="hover:underline" href="mailto:kslawnranger@gmail.com">kslawnranger@gmail.com</a></div>
+          <div class="flex items-center gap-2">🕒 Monday–Saturday 7:00 AM – 6:00 PM</div>
+          <div class="flex items-center gap-2">📍 Manhattan • Wamego • St. George • Alma • Junction City</div>
         </div>
       </div>
+
+      <!-- Right: rebuilt form -->
+      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+        <form id="contactForm" class="grid gap-4" novalidate>
+          <!-- Name / Email / Phone -->
+          <input class="border rounded-xl p-3" name="name" placeholder="Full Name" aria-label="Full Name" required />
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <input class="border rounded-xl p-3" name="email" placeholder="Email" type="email" aria-label="Email" required />
+            <input class="border rounded-xl p-3" name="phone" placeholder="Phone" aria-label="Phone (optional)" />
+          </div>
+
+          <!-- Seasonal checkboxes (single list, ordered by season) -->
+          <fieldset class="grid gap-3" aria-describedby="servicesHelp">
+            <legend class="font-semibold">Select Services</legend>
+            <p id="servicesHelp" class="text-sm text-gray-600">Choose all that apply (ordered by season).</p>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <!-- Spring -->
+              <div class="rounded-xl border p-4">
+                <h4 class="font-medium mb-2">🌱 Spring <span class="text-xs text-gray-500">Mar–May</span></h4>
+                <label class="flex items-start gap-2 mb-2">
+                  <input type="checkbox" name="services" value="mulch_rock" class="mt-1" />
+                  <span>Mulch / Rock Installs</span>
+                </label>
+                <label class="flex items-start gap-2 mb-2">
+                  <input type="checkbox" name="services" value="sod" class="mt-1" />
+                  <span>Sod Installation</span>
+                </label>
+                <label class="flex items-start gap-2">
+                  <input type="checkbox" name="services" value="cleanup_spring" class="mt-1" />
+                  <span>Spring Cleanups &amp; Haul-Away</span>
+                </label>
+              </div>
+
+              <!-- Summer -->
+              <div class="rounded-xl border p-4">
+                <h4 class="font-medium mb-2">☀️ Summer <span class="text-xs text-gray-500">Jun–Aug</span></h4>
+                <label class="flex items-start gap-2 mb-2">
+                  <input type="checkbox" name="services" value="mowing" class="mt-1" />
+                  <span>Lawn Mowing &amp; Edging</span>
+                </label>
+                <label class="flex items-start gap-2">
+                  <input type="checkbox" name="services" value="trimming" class="mt-1" />
+                  <span>Bush/Shrub Trimming</span>
+                </label>
+              </div>
+
+              <!-- Fall -->
+              <div class="rounded-xl border p-4">
+                <h4 class="font-medium mb-2">🍂 Fall <span class="text-xs text-gray-500">Sep–Nov</span></h4>
+                <label class="flex items-start gap-2 mb-2">
+                  <input type="checkbox" name="services" value="aeration" class="mt-1" />
+                  <span>Aeration</span>
+                </label>
+                <label class="flex items-start gap-2 mb-2">
+                  <input type="checkbox" name="services" value="overseeding" class="mt-1" />
+                  <span>Overseeding</span>
+                </label>
+                <label class="flex items-start gap-2">
+                  <input type="checkbox" name="services" value="cleanup_fall" class="mt-1" />
+                  <span>Fall Cleanups &amp; Leaf Removal</span>
+                </label>
+              </div>
+
+              <!-- Winter -->
+              <div class="rounded-xl border p-4">
+                <h4 class="font-medium mb-2">❄️ Winter <span class="text-xs text-gray-500">Dec–Feb</span></h4>
+                <label class="flex items-start gap-2">
+                  <input type="checkbox" name="services" value="snow" class="mt-1" />
+                  <span>Snow &amp; Ice Management</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Other (expandable) -->
+            <div class="rounded-xl border p-4">
+              <label class="flex items-start gap-2">
+                <input id="service_other" type="checkbox" name="services" value="other" class="mt-1" />
+                <span>Other / Not sure</span>
+              </label>
+              <div id="otherWrap" class="hidden mt-3">
+                <textarea class="border rounded-xl p-3 w-full min-h-[90px]" name="other_details" placeholder="Tell us what you need…"></textarea>
+                <p class="text-xs text-gray-600 mt-1">Examples: drainage issue, one-time cleanup, special request, hardscaping details.</p>
+              </div>
+            </div>
+
+            <div id="servicesError" class="hidden text-sm text-red-600">Please select at least one service.</div>
+          </fieldset>
+
+          <!-- Project details -->
+          <textarea class="border rounded-xl p-3 min-h-[120px]" name="details" placeholder="Project details, address, and ideal timing"></textarea>
+
+          <!-- Honeypot -->
+          <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <!-- Submit -->
+          <button type="submit" class="rounded-xl px-5 py-3 bg-emerald-700 text-white hover:bg-emerald-800">Send Message</button>
+          <p id="formMsg" class="text-sm mt-1"></p>
+        </form>
+      </div>
     </div>
-  </section>
+  </div>
+
+  <!-- Contact form script -->
+  <script>
+    (function(){
+      // Keep your existing Formspree endpoint & GA event
+      const ENDPOINT = "https://formspree.io/f/mrblvwde"; // unchanged:contentReference[oaicite:1]{index=1}
+      const form = document.getElementById('contactForm');
+      const msg  = document.getElementById('formMsg');
+      const other = document.getElementById('service_other');
+      const otherWrap = document.getElementById('otherWrap');
+      const servicesError = document.getElementById('servicesError');
+
+      // Toggle "Other" details
+      other?.addEventListener('change', () => {
+        otherWrap.classList.toggle('hidden', !other.checked);
+      });
+
+      function hasAnyServiceSelected() {
+        return !!form.querySelector('input[name="services"]:checked');
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Validate at least one service
+        if (!hasAnyServiceSelected()) {
+          servicesError.classList.remove('hidden');
+          servicesError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+        } else {
+          servicesError.classList.add('hidden');
+        }
+
+        msg.textContent = "Sending…";
+        msg.className = "text-sm mt-1 text-gray-600";
+
+        const data = new FormData(form);
+        if (data.get('_gotcha')) { // spam bot
+          msg.textContent = "Thanks!";
+          msg.className = "text-sm mt-1 text-emerald-700";
+          form.reset();
+          otherWrap.classList.add('hidden');
+          return;
+        }
+
+        try {
+          const res = await fetch(ENDPOINT, { method: "POST", headers: { "Accept": "application/json" }, body: data });
+          if (res.ok) {
+            msg.textContent = "Thanks! Your message was sent.";
+            msg.className = "text-sm mt-1 text-emerald-700";
+            form.reset();
+            otherWrap.classList.add('hidden');
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', { 'event_category': 'Form', 'event_label': 'Contact Form' }); // unchanged:contentReference[oaicite:2]{index=2}
+            }
+          } else {
+            msg.textContent = "Couldn’t send. Try email: kslawnranger@gmail.com";
+            msg.className = "text-sm mt-1 text-red-600";
+          }
+        } catch {
+          msg.textContent = "Network error. Email us at kslawnranger@gmail.com";
+          msg.className = "text-sm mt-1 text-red-600";
+        }
+      });
+    })();
+  </script>
+</section>
 
   <footer class="border-t bg-gray-50">
     <div class="text-xs text-center text-gray-500 py-4">© 2025 KS Lawn Ranger LLC. All rights reserved.</div>
