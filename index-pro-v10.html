@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KS Lawn Ranger | Lawn Care & Landscaping in Manhattan, KS</title>
+
+  <meta name="description" content="KS Lawn Ranger LLC provides professional lawn mowing, landscaping, sod installation, hardscaping, cleanups, and snow removal across Manhattan, Wamego, St. George, Alma, and Junction City. Call (913) 221-7981 for a free estimate." />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="KS Lawn Ranger | Lawn Care & Landscaping in Manhattan, KS" />
+  <meta property="og:description" content="Local, reliable lawn care: mowing, mulch, sod, hardscaping, cleanups, and snow removal. Free estimates." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="images/logo.jpg" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G26464Y3JF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G26464Y3JF');
+  </script>
+
+  <style>
+    :root {
+      --brand: #0f766e;    /* emerald-700 */
+      --brand-dark: #115e59; /* emerald-800 */
+      --accent: #7b1c2d;   /* maroon */
+      --ink: #101827;
+      --muted: #6b7280;
+      --card: #f8fafb;
+      --ring: #e5e7eb;
+    }
+    html { scroll-behavior: smooth; }
+    body { color: var(--ink); }
+    section { scroll-margin-top: 100px; }
+    .shadow-soft { box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+
+    /* Before/After slider */
+    .ba-wrapper { position: relative; overflow: hidden; border-radius: 1rem; }
+    .ba-after { position:absolute; inset:0; overflow:hidden; }
+    .ba-resize { position:absolute; inset:0; width:50%; border-right:2px solid white; }
+    .ba-handle {
+      position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);
+      width:46px; height:46px; border-radius:9999px; background:#ffffffee; box-shadow: 0 4px 12px rgba(0,0,0,.15);
+      display:flex; align-items:center; justify-content:center; font-size:20px; cursor:ew-resize;
+    }
+
+    /* Sticky call bar (mobile) */
+    .sticky-call { position: fixed; inset-inline: 0; bottom: 0; z-index: 60; }
+
+    /* Filter pills */
+    .pill { border: 1px solid var(--ring); background: #fff; border-radius: 999px; padding: 8px 14px; font-size: .95rem; }
+    .pill[aria-pressed="true"] { background: var(--brand); color: #fff; border-color: var(--brand); }
+    .gallery-item { transition: transform .18s ease, opacity .18s ease; }
+    .gallery-item.hide { opacity: 0; transform: scale(.98); pointer-events:none; }
+  
+    /* Masonry gallery distinct from Services cards */
+    .gallery-masonry { column-gap: 1rem; }
+    @media (min-width: 640px) { .gallery-masonry { columns: 2; } }
+    @media (min-width: 1024px) { .gallery-masonry { columns: 3; } }
+    .gallery-card { break-inside: avoid; margin-bottom: 1rem; border-radius: 1rem; overflow: hidden; position: relative; }
+    .gallery-card img { display:block; width:100%; height:auto; }
+    .gallery-cap {
+      position:absolute; left:0; right:0; bottom:0;
+      background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0));
+      color:#fff; padding: 28px 14px 10px;
+      font-size:.95rem;
+    }
+    /* Lightbox */
+    .lightbox { position:fixed; inset:0; background:rgba(0,0,0,.85); display:none; align-items:center; justify-content:center; z-index:80; }
+    .lightbox.show { display:flex; }
+    .lightbox img { max-width:90vw; max-height:85vh; border-radius: 12px; }
+    .lightbox .close { position:absolute; top:16px; right:16px; color:#fff; font-size:28px; cursor:pointer; }
+
+  </style>
+</head>
+<body class="bg-gray-50">
+  <!-- Top seasonal promo -->
+  <div class="w-full bg-[var(--brand)] text-white text-sm py-2 text-center">
+    🍂 Fall Aeration &amp; Overseeding — Booking Now • Free On‑Site Estimates
+  </div>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-3">
+          <img src="images/logo.jpg" alt="KS Lawn Ranger logo"
+               class="h-10 w-10 rounded-full object-contain object-center bg-white ring-2 ring-[var(--brand)]"/>
+          <div class="leading-tight">
+            <div class="font-semibold">KS Lawn Ranger LLC</div>
+            <div class="text-xs text-gray-500">Manhattan • Wamego • St. George • Alma • Junction City</div>
+          </div>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-[var(--brand)]">Services</a>
+          <a href="#gallery" class="hover:text-[var(--brand)]">Gallery</a>
+          <a href="#reviews" class="hover:text-[var(--brand)]">Reviews</a>
+          <a href="#faq" class="hover:text-[var(--brand)]">FAQ</a>
+          <a href="#service-area" class="hover:text-[var(--brand)]">Service Area</a>
+          <a href="#contact" class="hover:text-[var(--brand)]">Contact</a>
+        </nav>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="tel:+19132217981" class="px-4 py-2 rounded-xl border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/10">Call</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-emerald-50"></div>
+    <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+      <div class="flex flex-col justify-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Professional Lawn Care & Landscaping—Done Right, On Time</h1>
+        <p class="mt-4 text-lg text-gray-600">From mowing and edging to aeration, overseeding, hardscaping, and snow removal—our local team keeps your property sharp and season‑ready.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#contact" class="px-6 py-3 rounded-xl bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Get a Free Estimate</a>
+          <a href="#services" class="px-6 py-3 rounded-xl border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--accent)]/10">Explore Services</a>
+          <a href="https://g.page/r/CQ3hgayPFJW2EBM/review" target="_blank" rel="noopener nofollow" class="px-6 py-3 rounded-xl border border-[var(--brand)] text-[var(--brand)] hover:bg-emerald-50">Leave a Review</a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-soft ring-1 ring-black/5">
+          <img src="images/hero.jpg" alt="Hero lawn project" class="w-full h-full object-cover" loading="lazy"/>
+        </div>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Services (seasonal blocks) -->
+  <section id="services" class="py-14 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-8">
+        <h2 class="text-3xl md:text-4xl font-bold">Services</h2>
+        <a href="#contact" class="text-sm text-[var(--brand)] hover:underline">Request estimate →</a>
+      </div>
+
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- NEW: Hardscaping -->
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/after-5.jpg" alt="Hardscaping patios and rock borders" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Patios, paths & rock borders</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Hardscaping</h3></div>
+        </div>
+
+        <!-- Spring -->
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/mulch.jpg" alt="Mulch & Rock Installs" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Crisp beds, fresh mulch</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Mulch &amp; Rock Installs</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/sod.jpg" alt="Sod Installation" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Instant lawn, day one</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Sod Installation</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/stihl-leaves.jpg" alt="Spring Cleanups & Haul‑Away" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Leaves &amp; debris hauled away</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Spring Cleanups &amp; Haul‑Away</h3></div>
+        </div>
+
+        <!-- Summer -->
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/stripes.jpg" alt="Lawn Mowing & Edging" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Fresh stripes &amp; clean edges</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Lawn Mowing &amp; Edging</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/after-4.jpg" alt="Bush & Shrub Trimming" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Neat hedges and shape</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Bush &amp; Shrub Trimming</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/before-6.jpg" alt="Bed weeding & maintenance" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Weed-free beds look sharp</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Bed Weeding &amp; Maintenance</h3></div>
+        </div>
+
+        <!-- Fall -->
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow:hidden">
+            <img src="images/aeration.jpg" alt="Aeration" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Core plugs improve root health</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Aeration</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow:hidden">
+            <img src="images/overseeding.jpg" alt="Overseeding" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-6 00 bg-white/80 backdrop-blur px-3 py-2 border-t">New grass sprouting after seeding</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Overseeding</h3></div>
+        </div>
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/leaves.jpg" alt="Fall Cleanups" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Leaves &amp; debris hauled away</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Fall Cleanups &amp; Leaf Removal</h3></div>
+        </div>
+
+        <!-- Winter -->
+        <div class="group rounded-2xl bg-white ring-1 ring-gray-200 hover:ring-[var(--brand)]/40 hover:shadow-lg transition overflow-hidden">
+          <figure class="aspect-[4/3] overflow-hidden">
+            <img src="images/snow-removal.jpg" alt="Snow & Ice Management" class="w-full h-full object-cover group-hover:scale-105 transition"/>
+            <figcaption class="text-xs text-gray-600 bg-white/80 backdrop-blur px-3 py-2 border-t">Snow cleared for safe access</figcaption>
+          </figure>
+          <div class="p-5"><h3 class="font-semibold text-lg">Snow &amp; Ice Management</h3></div>
+        </div>
+      </div>
+
+      <!-- Seasonal banner -->
+      <div class="mt-8 rounded-2xl border bg-emerald-50 p-5">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <p class="text-emerald-900"><strong>Now booking:</strong> 🍂 Aeration & Overseeding (prime fall window). Lock in your spot.</p>
+          <a href="#contact" class="inline-block rounded-xl px-5 py-3 bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Book Fall Service</a>
+        </div>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="py-14 md:py-20 bg-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Why Choose KS Lawn Ranger?</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">Local & Responsive</h3>
+          <p class="text-gray-600 mt-1 text-sm">Fast communication and on-time service from a local owner-operator.</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">Insured & Professional</h3>
+          <p class="text-gray-600 mt-1 text-sm">Fully insured with professional-grade equipment and clean results.</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">Season-Ready Plans</h3>
+          <p class="text-gray-600 mt-1 text-sm">From spring cleanups to winter snow, we keep your yard dialed year-round.</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">Satisfaction Focused</h3>
+          <p class="text-gray-600 mt-1 text-sm">We stand behind our work—your property looking its best is our goal.</p>
+        </div>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Gallery: Filterable -->
+  <section id="gallery" class="py-14 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Project Gallery</h2>
+        <a href="#contact" class="text-sm text-[var(--brand)] hover:underline">Get a quote →</a>
+      </div>
+
+      <div class="flex flex-wrap gap-2 mb-6">
+        <button class="pill" data-filter="all" aria-pressed="true">All</button>
+        <button class="pill" data-filter="mowing">Mowing</button>
+        <button class="pill" data-filter="mulch">Mulch &amp; Rock</button>
+        <button class="pill" data-filter="sod">Sod</button>
+        <button class="pill" data-filter="cleanup">Cleanups</button>
+        <button class="pill" data-filter="hardscaping">Hardscaping</button>
+        <button class="pill" data-filter="snow">Snow</button>
+      </div>
+
+      <div id="galleryGrid" class="gallery-masonry">
+        <!-- New items from user uploads -->
+        <figure class="gallery-item gallery-card" data-cat="cleanup">
+          <img src="images/after-3.jpg" alt="Commercial bed cleanup and pruning" class=""/>
+          <figcaption class="gallery-cap">Commercial Bed Cleanup</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-card" data-cat="mowing">
+          <img src="images/after-4.jpg" alt="Shrub trimming with neat hedge line" class=""/>
+          <figcaption class="gallery-cap">Shrub & Hedge Trimming</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-card" data-cat="hardscaping">
+          <img src="images/after-5.jpg" alt="Gravel patio clean and edged" class=""/>
+          <figcaption class="gallery-cap">Patio & Hardscape Cleanup</figcaption>
+        </figure>
+        <figure class="gallery-item gallery-card" data-cat="mulch">
+          <img src="images/after-6.jpg" alt="Fresh mulch installed around AC units" class=""/>
+          <figcaption class="gallery-cap">Mulch Install</figcaption>
+        </figure>
+
+        <!-- Use existing images so nothing breaks -->
+        <figure class="gallery-item gallery-card" data-cat="mowing">
+          <img src="images/stripes.jpg" alt="Fresh stripes after mowing" class=""/>
+          <figcaption class="gallery-cap">Mowing & Edging</figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-card" data-cat="mulch">
+          <img src="images/mulch.jpg" alt="Mulch install" class=""/>
+          <figcaption class="gallery-cap">Mulch & Rock Install</figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-card" data-cat="sod">
+          <img src="images/sod.jpg" alt="Sod installation" class=""/>
+          <figcaption class="gallery-cap">Sod Installation</figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-card" data-cat="cleanup">
+          <img src="images/leaves.jpg" alt="Leaf cleanup" class=""/>
+          <figcaption class="gallery-cap">Leaf & Debris Cleanup</figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-card" data-cat="hardscaping">
+          <img src="images/hardscaping.jpg" alt="Hardscaping rock path" class=""/>
+          <figcaption class="gallery-cap">Hardscaping Project</figcaption>
+        </figure>
+
+        <figure class="gallery-item gallery-card" data-cat="snow">
+          <img src="images/snow-removal.jpg" alt="Snow removal" class=""/>
+          <figcaption class="gallery-cap">Snow & Ice Management</figcaption>
+        </figure>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Before & After (kept, polished) -->
+  <section id="beforeafter" class="py-14 md:py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Before &amp; After</h2>
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl mb-8" data-ba>
+        <img src="images/after-1.jpg" alt="After" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/before-1.jpg" alt="Before" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl" data-ba>
+        <img src="images/after-2.jpg" alt="After" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/before-2.jpg" alt="Before" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+      <!-- To add more pairs, duplicate a block above and change src to before-3.jpg/after-3.jpg, etc. -->
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl mt-8" data-ba>
+        <img src="images/before-3.jpg" alt="Before 3" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/after-6.jpg" alt="After 3" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl mt-8" data-ba>
+        <img src="images/before-4.jpg" alt="Before 4" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/after-4.jpg" alt="After 4" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl mt-8" data-ba>
+        <img src="images/before-5.jpg" alt="Before 5" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/after-5.jpg" alt="After 5" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+      <div class="ba-wrapper aspect-[3/2] bg-gray-100 ring-1 ring-gray-200 shadow-soft rounded-2xl mt-8" data-ba>
+        <img src="images/before-6.jpg" alt="Before 6" class="w-full h-full object-cover" loading="lazy"/>
+        <div class="ba-after">
+          <div class="ba-resize"><img src="images/after-3.jpg" alt="After 6" class="w-full h-full object-cover" loading="lazy"/></div>
+        </div>
+        <div class="ba-handle" aria-label="Drag to compare">↔</div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-- Reviews: live widget hook + fallback -->
+  <section id="reviews" class="py-14 md:py-20 bg-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold">What Neighbors Say</h2>
+        <a href="https://g.page/r/CQ3hgayPFJW2EBM/review" target="_blank" rel="noopener nofollow" class="text-sm text-[var(--brand)] hover:underline">Leave a Google review →</a>
+      </div>
+
+      <!-- Live reviews widget (optional) -->
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-6adc10db-b8aa-48f7-aa11-0d204f5268b9" data-elfsight-app-lazy></div>
+
+      <!--
+        Paste your provider embed here (Elfsight, Trustmary, etc.). Example:
+        <div class="elfsight-app-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" data-elfsight-app-lazy></div>
+        <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+      -->
+
+      <!-- Fallback static reviews (auto-rendered from JS below) -->
+      <div class="text-center mt-6">
+        <a href="https://g.page/r/CQ3hgayPFJW2EBM/review" target="_blank" rel="noopener nofollow" class="inline-block px-5 py-3 rounded-xl bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Leave a Google review</a>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-14 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">How much does lawn mowing cost?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Pricing depends on lot size, obstacles, and trimming. Most residential visits are quoted after a quick on‑site check—text your address for a fast estimate.</p>
+        </details>
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">When should I aerate and overseed in Kansas?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Fall is ideal (September–October). Cool temps and fall moisture help new roots establish before winter and surge in spring.</p>
+        </details>
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">Do you haul away debris?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Yes—we remove leaves, sticks, branches, and lawn waste as part of our cleanup services.</p>
+        </details>
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">What areas do you service?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Manhattan, Wamego, St. George, Alma, and Junction City. See the map below for a visual.</p>
+        </details>
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">What payment methods do you accept?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Cash, check, Venmo, and QuickBooks Online payment link. Ask if you need invoices for records—we use QuickBooks for all estimates and billing.</p>
+        </details>
+        <details class="rounded-2xl border bg-white p-5 shadow-sm">
+          <summary class="cursor-pointer font-medium">Are you insured?</summary>
+          <p class="mt-2 text-gray-700 text-sm">Yes. We’re fully insured and can provide proof on request.</p>
+        </details>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Service Area -->
+  <section id="service-area" class="py-14 md:py-20 bg-emerald-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-end justify-between mb-6">
+        <h2 class="text-3xl md:text-4xl font-bold">Service Area</h2>
+        <a href="#contact" class="text-sm text-[var(--brand)] hover:underline">Request estimate →</a>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="rounded-2xl overflow-hidden ring-1 ring-gray-200 shadow-soft">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13032.70690974877!2d-96.604!3d39.1836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8653bf7d9e9b2f3b%3A0x74d6d5b24d9a8fb9!2sManhattan%2C%20KS!5e0!3m2!1sen!2sus!4v1712448000000"
+            width="100%" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <h3 class="font-semibold text-lg">Proudly Serving</h3>
+          <ul class="mt-2 grid grid-cols-2 gap-1 text-gray-700">
+            <li>Manhattan</li>
+            <li>Wamego</li>
+            <li>St. George</li>
+            <li>Alma</li>
+            <li>Junction City</li>
+            <li>Ogden</li>
+          </ul>
+          <p class="text-sm text-gray-600 mt-3">If you’re nearby, send your address and we’ll confirm.</p>
+        </div>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact (seasonal checkboxes) -->
+  <section id="contact" class="py-14 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-6 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold">Let’s get your yard dialed in</h2>
+          <div class="mt-6 space-y-2 text-gray-800">
+            <div class="flex items-center gap-2">📞 <a class="hover:underline" href="tel:+19132217981">(913) 221-7981</a></div>
+            <div class="flex items-center gap-2">✉️ <a class="hover:underline" href="mailto:kslawnranger@gmail.com">kslawnranger@gmail.com</a></div>
+            <div class="flex items-center gap-2">🕒 Monday–Saturday 7:00 AM – 6:00 PM • Sunday: Closed</div>
+            <div class="flex items-center gap-2">📍 Manhattan • Wamego • St. George • Alma • Junction City</div>
+          </div>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <form id="contactForm" class="grid gap-4" novalidate>
+            <input class="border rounded-xl p-3" name="name" placeholder="Full Name" aria-label="Full Name" required />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <input class="border rounded-xl p-3" name="email" placeholder="Email" type="email" aria-label="Email" required />
+              <input class="border rounded-xl p-3" name="phone" placeholder="Phone" aria-label="Phone (optional)" />
+            </div>
+
+            <fieldset class="grid gap-3" aria-describedby="servicesHelp">
+              <legend class="font-semibold">Select Services</legend>
+              <p id="servicesHelp" class="text-sm text-gray-600">Choose all that apply (ordered by season).</p>
+
+              <div class="grid md:grid-cols-2 gap-4">
+                <!-- Spring -->
+                <div class="rounded-xl border p-4">
+                  <h4 class="font-medium mb-2">🌱 Spring <span class="text-xs text-gray-500">Mar–May</span></h4>
+                  <label class="flex items-start gap-2 mb-2">
+                    <input type="checkbox" name="services" value="mulch_rock" class="mt-1" />
+                    <span>Mulch / Rock Installs</span>
+                  </label>
+                  <label class="flex items-start gap-2 mb-2">
+                    <input type="checkbox" name="services" value="sod" class="mt-1" />
+                    <span>Sod Installation</span>
+                  </label>
+                  <label class="flex items-start gap-2">
+                    <input type="checkbox" name="services" value="cleanup_spring" class="mt-1" />
+                    <span>Spring Cleanups &amp; Haul-Away</span>
+                  </label>
+                </div>
+
+                <!-- Summer -->
+                <div class="rounded-xl border p-4">
+                  <h4 class="font-medium mb-2">☀️ Summer <span class="text-xs text-gray-500">Jun–Aug</span></h4>
+                  <label class="flex items-start gap-2 mb-2">
+                    <input type="checkbox" name="services" value="mowing" class="mt-1" />
+                    <span>Lawn Mowing &amp; Edging</span>
+                  </label>
+                  <label class="flex items-start gap-2">
+                    <input type="checkbox" name="services" value="trimming" class="mt-1" />
+                    <span>Bush/Shrub Trimming</span>
+                  </label>
+                </div>
+
+                <!-- Fall -->
+                <div class="rounded-xl border p-4">
+                  <h4 class="font-medium mb-2">🍂 Fall <span class="text-xs text-gray-500">Sep–Nov</span></h4>
+                  <label class="flex items-start gap-2 mb-2">
+                    <input type="checkbox" name="services" value="aeration" class="mt-1" />
+                    <span>Aeration</span>
+                  </label>
+                  <label class="flex items-start gap-2 mb-2">
+                    <input type="checkbox" name="services" value="overseeding" class="mt-1" />
+                    <span>Overseeding</span>
+                  </label>
+                  <label class="flex items-start gap-2">
+                    <input type="checkbox" name="services" value="cleanup_fall" class="mt-1" />
+                    <span>Fall Cleanups &amp; Leaf Removal</span>
+                  </label>
+                </div>
+
+                <!-- Winter -->
+                <div class="rounded-xl border p-4">
+                  <h4 class="font-medium mb-2">❄️ Winter <span class="text-xs text-gray-500">Dec–Feb</span></h4>
+                  <label class="flex items-start gap-2">
+                    <input type="checkbox" name="services" value="snow" class="mt-1" />
+                    <span>Snow &amp; Ice Management</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- Other (expandable) -->
+              <div class="rounded-xl border p-4">
+                <label class="flex items-start gap-2">
+                  <input id="service_other" type="checkbox" name="services" value="other" class="mt-1" />
+                  <span>Other / Not sure</span>
+                </label>
+                <div id="otherWrap" class="hidden mt-3">
+                  <textarea class="border rounded-xl p-3 w-full min-h-[90px]" name="other_details" placeholder="Tell us what you need…"></textarea>
+                  <p class="text-xs text-gray-600 mt-1">Examples: drainage issue, one-time cleanup, special request, hardscaping details.</p>
+                </div>
+              </div>
+
+              <div id="servicesError" class="hidden text-sm text-red-600">Please select at least one service.</div>
+            </fieldset>
+
+            <textarea class="border rounded-xl p-3 min-h-[120px]" name="details" placeholder="Project details, address, and ideal timing"></textarea>
+            <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+            <button type="submit" class="rounded-xl px-5 py-3 bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Send Message</button>
+            <p id="formMsg" class="text-sm mt-1"></p>
+          </form>
+        </div>
+      
+      <!-- Lightbox modal -->
+      <div id="lbx" class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+        <span class="close" aria-label="Close">✕</span>
+        <img id="lbx-img" alt="Gallery image"/>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-6 py-8 text-sm">
+        <div>
+          <div class="font-semibold">KS Lawn Ranger LLC</div>
+          <div class="mt-1 text-gray-600">Local lawn care & landscaping for Manhattan, Wamego, St. George, Alma, Junction City.</div>
+        </div>
+        <div>
+          <div class="font-semibold">Contact</div>
+          <div class="mt-1 text-gray-600">
+            <div>Phone: <a class="hover:underline" href="tel:+19132217981">(913) 221-7981</a></div>
+            <div>Email: <a class="hover:underline" href="mailto:kslawnranger@gmail.com">kslawnranger@gmail.com</a></div>
+          </div>
+        </div>
+        <div>
+          <div class="font-semibold">Hours</div>
+          <div class="mt-1 text-gray-600">Mon–Sat: 7:00 AM – 6:00 PM • Sun: Closed</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-xs text-center text-gray-500 py-4">© 2025 KS Lawn Ranger LLC. All rights reserved.</div>
+  </footer>
+
+  <!-- Sticky call button (mobile only) -->
+  <div class="sticky-call md:hidden">
+    <a href="tel:+19132217981" class="block m-3 rounded-2xl bg-[var(--accent)] text-white text-center py-3 shadow-lg">📞 Call (913) 221‑7981</a>
+  </div>
+
+  <script>
+    // Before/After slider
+    function initBA(el){
+      const resize = el.querySelector('.ba-resize');
+      const handle = el.querySelector('.ba-handle');
+      function setX(clientX){
+        const rect = el.getBoundingClientRect();
+        let x = Math.max(0, Math.min(clientX - rect.left, rect.width));
+        const pct = (x/rect.width)*100;
+        resize.style.width = pct + '%';
+        handle.style.left = pct + '%';
+      }
+      function start(e){
+        e.preventDefault();
+        const move = (ev)=> setX((ev.touches? ev.touches[0].clientX : ev.clientX));
+        const up = ()=> { window.removeEventListener('mousemove', move); window.removeEventListener('touchmove', move); window.removeEventListener('mouseup', up); window.removeEventListener('touchend', up); };
+        window.addEventListener('mousemove', move);
+        window.addEventListener('touchmove', move, {passive:false});
+        window.addEventListener('mouseup', up);
+        window.addEventListener('touchend', up);
+      }
+      handle.addEventListener('mousedown', start);
+      handle.addEventListener('touchstart', start, {passive:false});
+    }
+    document.querySelectorAll('[data-ba]').forEach(initBA);
+
+    pills.forEach(p => p.setAttribute('aria-pressed', p.dataset.filter === val ? 'true' : 'false'));
+    }
+    pills.forEach(p => p.addEventListener('click', () => setFilter(p.dataset.filter)));
+
+    
+    // Hide broken images gracefully
+    // ---- Developer aid: log missing images (won't show to users) ----
+    (function(){
+      const expected = [
+        'images/before-3.jpg','images/after-3.jpg',
+        'images/before-4.jpg','images/after-4.jpg',
+        'images/before-5.jpg','images/after-5.jpg',
+        'images/before-6.jpg','images/after-6.jpg'
+      ];
+      expected.forEach(src => {
+        const probe = new Image();
+        probe.onload = ()=>{};
+        probe.onerror = ()=> console.warn('[KS Lawn Ranger] Missing image:', src);
+        probe.src = src + (src.includes('?') ? '&' : '?') + 'v=' + Date.now();
+      });
+    })();
+ (e.g., when photos not yet uploaded)
+    document.querySelectorAll('img').forEach(function(img){
+      img.addEventListener('error', function(){
+        var wrap = img.closest('.ba-wrapper, .gallery-item');
+        if (wrap) { wrap.remove(); }
+      }, { once: true });
+    });
+
+
+    // Contact form
+    (function(){
+      const ENDPOINT = "https://formspree.io/f/mrblvwde";
+      const form = document.getElementById('contactForm');
+      const msg  = document.getElementById('formMsg');
+      const other = document.getElementById('service_other');
+      const otherWrap = document.getElementById('otherWrap');
+      const servicesError = document.getElementById('servicesError');
+
+      other?.addEventListener('change', () => {
+        otherWrap.classList.toggle('hidden', !other.checked);
+      });
+
+      function hasAnyServiceSelected() {
+        return !!form.querySelector('input[name="services"]:checked');
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        if (!hasAnyServiceSelected()) {
+          servicesError.classList.remove('hidden');
+          servicesError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+        } else {
+          servicesError.classList.add('hidden');
+        }
+
+        msg.textContent = "Sending…";
+        msg.className = "text-sm mt-1 text-gray-600";
+
+        const data = new FormData(form);
+        if (data.get('_gotcha')) {
+          msg.textContent = "Thanks!";
+          msg.className = "text-sm mt-1 text-emerald-700";
+          form.reset();
+          otherWrap.classList.add('hidden');
+          return;
+        }
+
+        try {
+          const res = await fetch(ENDPOINT, { method: "POST", headers: { "Accept": "application/json" }, body: data });
+          if (res.ok) {
+            msg.textContent = "Thanks! Your message was sent.";
+            msg.className = "text-sm mt-1 text-emerald-700";
+            form.reset();
+            otherWrap.classList.add('hidden');
+            if (typeof gtag === 'function') {
+              gtag('event', 'generate_lead', { 'event_category': 'Form', 'event_label': 'Contact Form' });
+            }
+          } else {
+            msg.textContent = "Couldn’t send. Try email: kslawnranger@gmail.com";
+            msg.className = "text-sm mt-1 text-red-600";
+          }
+        } catch {
+          msg.textContent = "Network error. Email us at kslawnranger@gmail.com";
+          msg.className = "text-sm mt-1 text-red-600";
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
