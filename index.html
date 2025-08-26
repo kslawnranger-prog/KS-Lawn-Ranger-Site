@@ -63,10 +63,7 @@
     #backToTop.show{ opacity:1; pointer-events:auto; }
     .sticky-call{ position: fixed; inset-inline: 0; bottom: 0; z-index: 60; opacity:0; pointer-events:none; transition: opacity .25s ease; }
     .sticky-call.show{ opacity:.95; pointer-events:auto; }
-  
-.no-scrollbar::-webkit-scrollbar { display:none; }
-.no-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
-</style>
+  </style>
   <link rel="preload" as="image" href="images/first-one.jpg">
 
   <!-- LocalBusiness schema -->
@@ -134,7 +131,33 @@
           <a href="#service-area" class="hover:text-[var(--brand)]">Service Area</a>
           <a href="#contact" class="hover:text-[var(--brand)]">Contact</a>
         </nav>
-        <!-- Hero -->
+        <!-- Mobile hamburger -->
+        <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 ring-1 ring-gray-300 text-gray-700" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="hidden md:flex items-center gap-3">
+          <a href="#contact" class="px-4 py-2 rounded-xl bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)]">Get a Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobileMenu" class="md:hidden hidden fixed inset-0 z-50">
+    <div class="absolute inset-0 bg-black/40" data-dismiss></div>
+    <div class="absolute top-0 inset-x-0 bg-white shadow-lg ring-1 ring-black/5 rounded-b-2xl overflow-hidden">
+      <nav class="px-4 py-3 grid gap-2 text-base">
+        <a href="#services" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>Services</a>
+        <a href="#gallery" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>Gallery</a>
+        <a href="#reviews" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>Reviews</a>
+        <a href="#faq" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>FAQ</a>
+        <a href="#service-area" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>Service Area</a>
+        <a href="#contact" class="py-2 px-3 rounded-lg hover:bg-gray-50" data-link>Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
   <section class="relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-emerald-50"></div>
     <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-8 py-14 md:py-20">
