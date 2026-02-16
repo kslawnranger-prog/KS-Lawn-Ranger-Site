@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>/thank-you.html</loc>
-    <lastmod>2025-08-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
+  <loc>https://kslawnranger.com/spring-cleanup-manhattan-ks.html</loc>
+  <lastmod>2026-02-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://kslawnranger.com/landscaping-manhattan-ks.html</loc>
+  <lastmod>2026-02-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://kslawnranger.com/snow-removal-manhattan-ks.html</loc>
+  <lastmod>2026-02-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.70</priority>
+</url>
 </urlset>
