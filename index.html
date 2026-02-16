@@ -73,29 +73,45 @@
 </style>
   <link rel="preload" as="image" href="images/first-one.jpg">
 
-  <!-- LocalBusiness schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "KS Lawn Ranger LLC",
-    "image": "images/first-one.jpg",
-    "telephone": "+1-913-221-7981",
-    "email": "kslawnranger@gmail.com",
-    "areaServed": [
-      {"@type":"City","name":"Manhattan"},
-      {"@type":"City","name":"Wamego"},
-      {"@type":"City","name":"St. George"},
-      {"@type":"City","name":"Alma"},
-      {"@type":"City","name":"Junction City"},
-      {"@type":"City","name":"Ogden"}
-    ],
-    "sameAs": ["https://g.page/r/CQ3hgayPFJW2EBM/review"],
-    "openingHoursSpecification": [
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"18:00"}
-    ]
-  }
-  </script>
+<!-- LocalBusiness schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "KS Lawn Ranger LLC",
+  "url": "https://kslawnranger.com/",
+  "image": "https://kslawnranger.com/images/first-one.jpg",
+  "telephone": "+1-913-221-7981",
+  "email": "kslawnranger@gmail.com",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Manhattan",
+    "addressRegion": "KS",
+    "addressCountry": "US"
+  },
+  "areaServed": [
+    "Manhattan, KS",
+    "Wamego, KS",
+    "St. George, KS",
+    "Alma, KS",
+    "Junction City, KS",
+    "Ogden, KS"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00",
+      "closes": "18:00"
+    }
+  ],
+  "sameAs": [
+    "https://g.page/r/CQ3hgayPFJW2EBM/review"
+  ]
+}
+</script>
+
 
   <!-- FAQ schema -->
   <script type="application/ld+json">
