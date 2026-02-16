@@ -146,16 +146,39 @@
 
   <!-- Header -->
   <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="#" class="flex items-center gap-3">
-          <!-- Bigger, centered circular logo -->
-          <div class="h-16 w-16 rounded-full overflow-hidden ring-2 ring-[var(--brand)] flex items-center justify-center bg-white">
-            <img src="images/logo-centered.png?v1756170328" alt="KS Lawn Ranger logo" class="h-full w-full object-contain object-center"/>
-          </div>
-          <div class="leading-tight">
-            <div class="font-semibold">KS Lawn Ranger LLC</div>
-          </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-3 items-center h-20">
+
+    <!-- LEFT: Nav -->
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="#services" class="hover:text-[var(--brand)]">Services</a>
+      <a href="#gallery" class="hover:text-[var(--brand)]">Gallery</a>
+      <a href="#reviews" class="hover:text-[var(--brand)]">Reviews</a>
+      <a href="#faq" class="hover:text-[var(--brand)]">FAQ</a>
+    </nav>
+
+    <!-- CENTER: Logo -->
+    <div class="flex justify-center">
+      <a href="/" class="flex items-center">
+        <div class="h-20 w-20 rounded-full overflow-hidden ring-2 ring-[var(--brand)] bg-white">
+          <img src="images/logo-centered.png" 
+               alt="KS Lawn Ranger LLC logo"
+               class="h-full w-full object-contain"/>
+        </div>
+      </a>
+    </div>
+
+    <!-- RIGHT: CTA -->
+    <div class="flex justify-end">
+      <a href="#contact" 
+         class="px-5 py-3 rounded-xl bg-[var(--brand)] text-white hover:bg-[var(--brand-dark)] shadow">
+         Request Your Free Estimate
+      </a>
+    </div>
+
+  </div>
+</div>
+
         </a>
         <nav class="hidden md:flex items-center gap-6 text-sm">
           <a href="#services" class="hover:text-[var(--brand)]">Services</a>
