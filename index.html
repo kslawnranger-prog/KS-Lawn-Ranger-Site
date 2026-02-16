@@ -147,7 +147,9 @@
 <!-- Header -->
 <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-3 items-center h-20">
+    
+    <!-- Removed h-20 and added vertical padding -->
+    <div class="grid grid-cols-3 items-center py-3">
 
       <!-- LEFT: Desktop Nav -->
       <nav class="hidden lg:flex items-center gap-6 text-sm">
@@ -159,15 +161,23 @@
       </nav>
 
       <!-- CENTER: Logo -->
-<div class="flex justify-center">
-  <a href="/" class="flex items-center">
-    <img
-      src="images/logo-centered.png"
-      alt="KS Lawn Ranger LLC logo"
-      class="h-16 sm:h-20 md:h-24 w-auto object-contain"
-    />
-  </a>
-</div>
+      <div class="flex justify-center">
+        <a href="/" class="flex items-center leading-none">
+          <img
+            src="images/logo-centered.png"
+            alt="KS Lawn Ranger LLC logo"
+            class="block h-16 sm:h-20 md:h-24 w-auto object-contain"
+          />
+        </a>
+      </div>
+
+      <!-- RIGHT: CTA placeholder (keep your existing CTA here if you had one) -->
+      <div class="flex justify-end items-center">
+        <!-- your button goes here -->
+      </div>
+
+    </div>
+  </div>
 
       <!-- RIGHT: CTA + Mobile Button -->
       <div class="flex justify-end items-center gap-3">
