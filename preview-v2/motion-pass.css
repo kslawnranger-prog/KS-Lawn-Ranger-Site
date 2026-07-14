@@ -1,0 +1,10 @@
+/* Motion and interaction refinement */
+.hero-copy .kicker,.hero-copy h1,.hero-copy .hero-meta{opacity:0;transform:translateY(34px);animation:heroCopyIn 1s var(--ease) forwards}.hero-copy h1{animation-delay:.12s}.hero-copy .hero-meta{animation-delay:.28s}.hero-copy .kicker{animation-delay:.04s}@keyframes heroCopyIn{to{opacity:1;transform:none}}
+[data-tilt]{transform-style:preserve-3d;will-change:transform;transition:transform .55s var(--ease)}[data-tilt] img{will-change:transform}.work-tile span,.project-spotlight-content,.capability-caption{transform:translateZ(28px)}
+.circle-link,.footer-estimate,.desktop-float-cta,.nav-cta,.button,.form button{will-change:transform}.magnetic{transition:transform .28s var(--ease)}
+.compare .handle{transition:box-shadow .3s var(--ease),transform .3s var(--ease)}.compare:hover .handle{box-shadow:0 16px 55px rgba(0,0,0,.34);transform:translate(-50%,-50%) scale(1.06)}
+.story-panel.active .story-copy span{animation:storyTextIn .8s var(--ease) both}.story-panel.active .story-copy h2{animation:storyTextIn 1s .08s var(--ease) both}@keyframes storyTextIn{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.work-tile:before{content:"View";position:absolute;z-index:4;top:20px;right:20px;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#111;font-size:.66rem;text-transform:uppercase;letter-spacing:.12em;opacity:0;transform:scale(.75) rotate(-8deg);transition:.45s var(--ease)}.work-tile:hover:before{opacity:1;transform:scale(1) rotate(0)}
+.form button:disabled{opacity:.72;cursor:wait}.form button:disabled b{animation:sendingArrow .8s ease-in-out infinite alternate}@keyframes sendingArrow{to{transform:translate(5px,-5px)}}
+@media(hover:none),(max-width:900px){[data-tilt]{transform:none!important}.work-tile:before{display:none}}
+@media(prefers-reduced-motion:reduce){.hero-copy .kicker,.hero-copy h1,.hero-copy .hero-meta,.story-panel.active .story-copy span,.story-panel.active .story-copy h2{animation:none;opacity:1;transform:none}.magnetic,[data-tilt]{transform:none!important;transition:none}}
