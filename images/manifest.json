@@ -1,0 +1,897 @@
+{
+  "aeration": {
+    "slug": "aeration",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/aeration-480.webp",
+        "jpg": "/images/opt/aeration-480.jpg",
+        "webp_bytes": 132674,
+        "jpg_bytes": 128536,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/aeration-720.webp",
+        "jpg": "/images/opt/aeration-720.jpg",
+        "webp_bytes": 181120,
+        "jpg_bytes": 188245,
+        "webp_q": 68,
+        "jpg_q": 52,
+        "blur": 0.7
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/aeration-960.webp",
+        "jpg": "/images/opt/aeration-960.jpg",
+        "webp_bytes": 186636,
+        "jpg_bytes": 187837,
+        "webp_q": 62,
+        "jpg_q": 46,
+        "blur": 1.05
+      }
+    ]
+  },
+  "after-1": {
+    "slug": "after-1",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-1-480.webp",
+        "jpg": "/images/opt/after-1-480.jpg",
+        "webp_bytes": 107644,
+        "jpg_bytes": 106689,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-1-720.webp",
+        "jpg": "/images/opt/after-1-720.jpg",
+        "webp_bytes": 189284,
+        "jpg_bytes": 176218,
+        "webp_q": 50,
+        "jpg_q": 58,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-1-960.webp",
+        "jpg": "/images/opt/after-1-960.jpg",
+        "webp_bytes": 176636,
+        "jpg_bytes": 178992,
+        "webp_q": 44,
+        "jpg_q": 58,
+        "blur": 1.05
+      }
+    ]
+  },
+  "after-2": {
+    "slug": "after-2",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-2-480.webp",
+        "jpg": "/images/opt/after-2-480.jpg",
+        "webp_bytes": 104950,
+        "jpg_bytes": 105803,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-2-720.webp",
+        "jpg": "/images/opt/after-2-720.jpg",
+        "webp_bytes": 179244,
+        "jpg_bytes": 176815,
+        "webp_q": 44,
+        "jpg_q": 58,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-2-960.webp",
+        "jpg": "/images/opt/after-2-960.jpg",
+        "webp_bytes": 188390,
+        "jpg_bytes": 189309,
+        "webp_q": 50,
+        "jpg_q": 64,
+        "blur": 1.05
+      }
+    ]
+  },
+  "after-3-fixed": {
+    "slug": "after-3-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-3-fixed-480.webp",
+        "jpg": "/images/opt/after-3-fixed-480.jpg",
+        "webp_bytes": 76996,
+        "jpg_bytes": 81431,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-3-fixed-720.webp",
+        "jpg": "/images/opt/after-3-fixed-720.jpg",
+        "webp_bytes": 184980,
+        "jpg_bytes": 171205,
+        "webp_q": 74,
+        "jpg_q": 70,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-3-fixed-960.webp",
+        "jpg": "/images/opt/after-3-fixed-960.jpg",
+        "webp_bytes": 185178,
+        "jpg_bytes": 181073,
+        "webp_q": 74,
+        "jpg_q": 58,
+        "blur": 0.7
+      }
+    ]
+  },
+  "after-4-fixed": {
+    "slug": "after-4-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-4-fixed-480.webp",
+        "jpg": "/images/opt/after-4-fixed-480.jpg",
+        "webp_bytes": 89942,
+        "jpg_bytes": 97347,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-4-fixed-720.webp",
+        "jpg": "/images/opt/after-4-fixed-720.jpg",
+        "webp_bytes": 182922,
+        "jpg_bytes": 187700,
+        "webp_q": 56,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-4-fixed-960.webp",
+        "jpg": "/images/opt/after-4-fixed-960.jpg",
+        "webp_bytes": 189392,
+        "jpg_bytes": 187947,
+        "webp_q": 56,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "after-5-fixed": {
+    "slug": "after-5-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-5-fixed-480.webp",
+        "jpg": "/images/opt/after-5-fixed-480.jpg",
+        "webp_bytes": 99060,
+        "jpg_bytes": 99297,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-5-fixed-720.webp",
+        "jpg": "/images/opt/after-5-fixed-720.jpg",
+        "webp_bytes": 188804,
+        "jpg_bytes": 187399,
+        "webp_q": 50,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-5-fixed-960.webp",
+        "jpg": "/images/opt/after-5-fixed-960.jpg",
+        "webp_bytes": 183210,
+        "jpg_bytes": 187744,
+        "webp_q": 50,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "after-6": {
+    "slug": "after-6",
+    "src_w": 1800,
+    "src_h": 2400,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/after-6-480.webp",
+        "jpg": "/images/opt/after-6-480.jpg",
+        "webp_bytes": 92860,
+        "jpg_bytes": 101033,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/after-6-720.webp",
+        "jpg": "/images/opt/after-6-720.jpg",
+        "webp_bytes": 182374,
+        "jpg_bytes": 189793,
+        "webp_q": 56,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/after-6-960.webp",
+        "jpg": "/images/opt/after-6-960.jpg",
+        "webp_bytes": 179954,
+        "jpg_bytes": 181780,
+        "webp_q": 50,
+        "jpg_q": 64,
+        "blur": 1.05
+      }
+    ]
+  },
+  "before-1": {
+    "slug": "before-1",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-1-480.webp",
+        "jpg": "/images/opt/before-1-480.jpg",
+        "webp_bytes": 99478,
+        "jpg_bytes": 101669,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-1-720.webp",
+        "jpg": "/images/opt/before-1-720.jpg",
+        "webp_bytes": 183662,
+        "jpg_bytes": 180878,
+        "webp_q": 56,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-1-960.webp",
+        "jpg": "/images/opt/before-1-960.jpg",
+        "webp_bytes": 186322,
+        "jpg_bytes": 187156,
+        "webp_q": 56,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "before-2": {
+    "slug": "before-2",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-2-480.webp",
+        "jpg": "/images/opt/before-2-480.jpg",
+        "webp_bytes": 87856,
+        "jpg_bytes": 91031,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-2-720.webp",
+        "jpg": "/images/opt/before-2-720.jpg",
+        "webp_bytes": 181088,
+        "jpg_bytes": 179889,
+        "webp_q": 68,
+        "jpg_q": 70,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-2-960.webp",
+        "jpg": "/images/opt/before-2-960.jpg",
+        "webp_bytes": 182140,
+        "jpg_bytes": 178704,
+        "webp_q": 68,
+        "jpg_q": 52,
+        "blur": 0.7
+      }
+    ]
+  },
+  "before-3-fixed": {
+    "slug": "before-3-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-3-fixed-480.webp",
+        "jpg": "/images/opt/before-3-fixed-480.jpg",
+        "webp_bytes": 76408,
+        "jpg_bytes": 81049,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-3-fixed-720.webp",
+        "jpg": "/images/opt/before-3-fixed-720.jpg",
+        "webp_bytes": 179584,
+        "jpg_bytes": 173368,
+        "webp_q": 68,
+        "jpg_q": 70,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-3-fixed-960.webp",
+        "jpg": "/images/opt/before-3-fixed-960.jpg",
+        "webp_bytes": 188744,
+        "jpg_bytes": 181615,
+        "webp_q": 74,
+        "jpg_q": 58,
+        "blur": 0.7
+      }
+    ]
+  },
+  "before-4-fixed": {
+    "slug": "before-4-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-4-fixed-480.webp",
+        "jpg": "/images/opt/before-4-fixed-480.jpg",
+        "webp_bytes": 85342,
+        "jpg_bytes": 93457,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-4-fixed-720.webp",
+        "jpg": "/images/opt/before-4-fixed-720.jpg",
+        "webp_bytes": 186910,
+        "jpg_bytes": 181113,
+        "webp_q": 62,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-4-fixed-960.webp",
+        "jpg": "/images/opt/before-4-fixed-960.jpg",
+        "webp_bytes": 178020,
+        "jpg_bytes": 182863,
+        "webp_q": 56,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "before-5-fixed": {
+    "slug": "before-5-fixed",
+    "src_w": 1350,
+    "src_h": 1800,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-5-fixed-480.webp",
+        "jpg": "/images/opt/before-5-fixed-480.jpg",
+        "webp_bytes": 97246,
+        "jpg_bytes": 98729,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-5-fixed-720.webp",
+        "jpg": "/images/opt/before-5-fixed-720.jpg",
+        "webp_bytes": 185364,
+        "jpg_bytes": 180956,
+        "webp_q": 56,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-5-fixed-960.webp",
+        "jpg": "/images/opt/before-5-fixed-960.jpg",
+        "webp_bytes": 182222,
+        "jpg_bytes": 182692,
+        "webp_q": 56,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "before-6": {
+    "slug": "before-6",
+    "src_w": 1800,
+    "src_h": 2400,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/before-6-480.webp",
+        "jpg": "/images/opt/before-6-480.jpg",
+        "webp_bytes": 94130,
+        "jpg_bytes": 103224,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/before-6-720.webp",
+        "jpg": "/images/opt/before-6-720.jpg",
+        "webp_bytes": 183654,
+        "jpg_bytes": 178934,
+        "webp_q": 56,
+        "jpg_q": 58,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/before-6-960.webp",
+        "jpg": "/images/opt/before-6-960.jpg",
+        "webp_bytes": 180342,
+        "jpg_bytes": 186191,
+        "webp_q": 50,
+        "jpg_q": 64,
+        "blur": 1.05
+      }
+    ]
+  },
+  "first-one": {
+    "slug": "first-one",
+    "src_w": 1179,
+    "src_h": 1551,
+    "variants": [
+      {
+        "w": 480,
+        "h": 631,
+        "webp": "/images/opt/first-one-480.webp",
+        "jpg": "/images/opt/first-one-480.jpg",
+        "webp_bytes": 56302,
+        "jpg_bytes": 66020,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 947,
+        "webp": "/images/opt/first-one-720.webp",
+        "jpg": "/images/opt/first-one-720.jpg",
+        "webp_bytes": 130330,
+        "jpg_bytes": 150878,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1263,
+        "webp": "/images/opt/first-one-960.webp",
+        "jpg": "/images/opt/first-one-960.jpg",
+        "webp_bytes": 188984,
+        "jpg_bytes": 177532,
+        "webp_q": 56,
+        "jpg_q": 52,
+        "blur": 0.0
+      }
+    ]
+  },
+  "hardscaping": {
+    "slug": "hardscaping",
+    "src_w": 1508,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 652,
+        "webp": "/images/opt/hardscaping-480.webp",
+        "jpg": "/images/opt/hardscaping-480.jpg",
+        "webp_bytes": 69570,
+        "jpg_bytes": 78495,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 978,
+        "webp": "/images/opt/hardscaping-720.webp",
+        "jpg": "/images/opt/hardscaping-720.jpg",
+        "webp_bytes": 155618,
+        "jpg_bytes": 176184,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1304,
+        "webp": "/images/opt/hardscaping-960.webp",
+        "jpg": "/images/opt/hardscaping-960.jpg",
+        "webp_bytes": 181082,
+        "jpg_bytes": 188645,
+        "webp_q": 44,
+        "jpg_q": 46,
+        "blur": 0.0
+      }
+    ]
+  },
+  "leaves": {
+    "slug": "leaves",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/leaves-480.webp",
+        "jpg": "/images/opt/leaves-480.jpg",
+        "webp_bytes": 100232,
+        "jpg_bytes": 99932,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/leaves-720.webp",
+        "jpg": "/images/opt/leaves-720.jpg",
+        "webp_bytes": 182262,
+        "jpg_bytes": 184712,
+        "webp_q": 50,
+        "jpg_q": 64,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/leaves-960.webp",
+        "jpg": "/images/opt/leaves-960.jpg",
+        "webp_bytes": 189856,
+        "jpg_bytes": 186985,
+        "webp_q": 56,
+        "jpg_q": 46,
+        "blur": 0.7
+      }
+    ]
+  },
+  "mulch": {
+    "slug": "mulch",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/mulch-480.webp",
+        "jpg": "/images/opt/mulch-480.jpg",
+        "webp_bytes": 81462,
+        "jpg_bytes": 89243,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/mulch-720.webp",
+        "jpg": "/images/opt/mulch-720.jpg",
+        "webp_bytes": 187270,
+        "jpg_bytes": 180664,
+        "webp_q": 74,
+        "jpg_q": 70,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/mulch-960.webp",
+        "jpg": "/images/opt/mulch-960.jpg",
+        "webp_bytes": 178344,
+        "jpg_bytes": 176967,
+        "webp_q": 68,
+        "jpg_q": 52,
+        "blur": 0.7
+      }
+    ]
+  },
+  "overseeding": {
+    "slug": "overseeding",
+    "src_w": 1365,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 720,
+        "webp": "/images/opt/overseeding-480.webp",
+        "jpg": "/images/opt/overseeding-480.jpg",
+        "webp_bytes": 23702,
+        "jpg_bytes": 40822,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 1080,
+        "webp": "/images/opt/overseeding-720.webp",
+        "jpg": "/images/opt/overseeding-720.jpg",
+        "webp_bytes": 38848,
+        "jpg_bytes": 77312,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1440,
+        "webp": "/images/opt/overseeding-960.webp",
+        "jpg": "/images/opt/overseeding-960.jpg",
+        "webp_bytes": 56276,
+        "jpg_bytes": 123168,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      }
+    ]
+  },
+  "snow-removal": {
+    "slug": "snow-removal",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/snow-removal-480.webp",
+        "jpg": "/images/opt/snow-removal-480.jpg",
+        "webp_bytes": 64340,
+        "jpg_bytes": 75267,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/snow-removal-720.webp",
+        "jpg": "/images/opt/snow-removal-720.jpg",
+        "webp_bytes": 141844,
+        "jpg_bytes": 165878,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/snow-removal-960.webp",
+        "jpg": "/images/opt/snow-removal-960.jpg",
+        "webp_bytes": 183190,
+        "jpg_bytes": 177094,
+        "webp_q": 50,
+        "jpg_q": 46,
+        "blur": 0.0
+      }
+    ]
+  },
+  "sod": {
+    "slug": "sod",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/sod-480.webp",
+        "jpg": "/images/opt/sod-480.jpg",
+        "webp_bytes": 83460,
+        "jpg_bytes": 88997,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/sod-720.webp",
+        "jpg": "/images/opt/sod-720.jpg",
+        "webp_bytes": 183726,
+        "jpg_bytes": 175221,
+        "webp_q": 74,
+        "jpg_q": 70,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/sod-960.webp",
+        "jpg": "/images/opt/sod-960.jpg",
+        "webp_bytes": 175414,
+        "jpg_bytes": 188588,
+        "webp_q": 68,
+        "jpg_q": 58,
+        "blur": 0.7
+      }
+    ]
+  },
+  "stihl-leaves": {
+    "slug": "stihl-leaves",
+    "src_w": 1800,
+    "src_h": 1199,
+    "variants": [
+      {
+        "w": 480,
+        "h": 320,
+        "webp": "/images/opt/stihl-leaves-480.webp",
+        "jpg": "/images/opt/stihl-leaves-480.jpg",
+        "webp_bytes": 33612,
+        "jpg_bytes": 37423,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 480,
+        "webp": "/images/opt/stihl-leaves-720.webp",
+        "jpg": "/images/opt/stihl-leaves-720.jpg",
+        "webp_bytes": 68678,
+        "jpg_bytes": 79787,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 639,
+        "webp": "/images/opt/stihl-leaves-960.webp",
+        "jpg": "/images/opt/stihl-leaves-960.jpg",
+        "webp_bytes": 107792,
+        "jpg_bytes": 132726,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      }
+    ]
+  },
+  "stripes": {
+    "slug": "stripes",
+    "src_w": 1536,
+    "src_h": 2048,
+    "variants": [
+      {
+        "w": 480,
+        "h": 640,
+        "webp": "/images/opt/stripes-480.webp",
+        "jpg": "/images/opt/stripes-480.jpg",
+        "webp_bytes": 61518,
+        "jpg_bytes": 73414,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 720,
+        "h": 960,
+        "webp": "/images/opt/stripes-720.webp",
+        "jpg": "/images/opt/stripes-720.jpg",
+        "webp_bytes": 138538,
+        "jpg_bytes": 164727,
+        "webp_q": 74,
+        "jpg_q": 76,
+        "blur": 0.0
+      },
+      {
+        "w": 960,
+        "h": 1280,
+        "webp": "/images/opt/stripes-960.webp",
+        "jpg": "/images/opt/stripes-960.jpg",
+        "webp_bytes": 189472,
+        "jpg_bytes": 180409,
+        "webp_q": 50,
+        "jpg_q": 46,
+        "blur": 0.0
+      }
+    ]
+  },
+  "logo": {
+    "slug": "logo",
+    "src_w": 320,
+    "src_h": 206,
+    "variants": [
+      {
+        "w": 320,
+        "h": 206,
+        "webp": "/images/opt/logo.webp",
+        "jpg": "/images/opt/logo.png",
+        "webp_bytes": 10026,
+        "jpg_bytes": 8656
+      }
+    ]
+  }
+}

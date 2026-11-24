@@ -1,0 +1,149 @@
+{
+  "promo": {
+    "enabled": true,
+    "text": "Now booking seasonal snow contracts and late-fall leaf cleanup. Free on-site estimates.",
+    "href": "/services/snow-removal/"
+  },
+  "testimonials": [
+    {
+      "quote": "KS Lawn Ranger did an amazing job on our yard. Communication was great and the results looked fantastic.",
+      "place": "Manhattan, KS"
+    },
+    {
+      "quote": "Very professional and dependable. Our lawn has never looked better.",
+      "place": "Wamego, KS"
+    },
+    {
+      "quote": "Fast response, fair price, and high quality work. Highly recommend.",
+      "place": "Alma, KS"
+    }
+  ],
+  "comparisons": [
+    {
+      "before": "before-5-fixed",
+      "after": "after-5-fixed",
+      "alt_before": "Overgrown side yard before bed cleanup, with weeds along a stone retaining wall",
+      "alt_after": "The same side yard after cleanup, with fresh rock and a defined brick edge",
+      "caption": "Bed cleanup finished with rock beside an existing stone wall"
+    },
+    {
+      "before": "before-6",
+      "after": "after-6",
+      "alt_before": "Bare soil around two air conditioners before mulch",
+      "alt_after": "Fresh mulch installed around the air conditioners and along the foundation",
+      "caption": "Mulch installed along a foundation"
+    },
+    {
+      "before": "before-4-fixed",
+      "after": "after-4-fixed",
+      "alt_before": "Foundation shrubs before trimming",
+      "alt_after": "Foundation hedge after a shaped trim",
+      "caption": "Foundation hedge after trimming"
+    },
+    {
+      "before": "before-2",
+      "after": "after-2",
+      "alt_before": "Shade bed before a mulch refresh",
+      "alt_after": "Shade bed after mulch was refreshed around a tree and stepping stones",
+      "caption": "Mulch refreshed in a shaded bed"
+    }
+  ],
+  "gallery": [
+    {
+      "image": "first-one",
+      "alt": "Wide striped lawn in front of a light-colored house",
+      "caption": "Striped lawn",
+      "cat": "mowing"
+    },
+    {
+      "image": "stripes",
+      "alt": "Backyard lawn with mowing stripes between a fence and a deck",
+      "caption": "Mowing and edging",
+      "cat": "mowing"
+    },
+    {
+      "image": "mulch",
+      "alt": "Dark mulch bed with stepping stones, hostas, and a fresh edge against the lawn",
+      "caption": "Mulch install",
+      "cat": "landscape"
+    },
+    {
+      "image": "sod",
+      "alt": "Newly laid sod in a backyard beside a stone walk and wooden fence",
+      "caption": "Sod installation",
+      "cat": "landscape"
+    },
+    {
+      "image": "hardscaping",
+      "alt": "Paver patio next to a river-rock bed and a small shed",
+      "caption": "Paver patio and rock",
+      "cat": "landscape"
+    },
+    {
+      "image": "after-5-fixed",
+      "alt": "Side yard finished with tan rock, a brick edge, and a stone retaining wall",
+      "caption": "Rock bed and retaining wall",
+      "cat": "landscape"
+    },
+    {
+      "image": "after-4-fixed",
+      "alt": "Tightly shaped green hedge along the front of a house",
+      "caption": "Shrub trimming",
+      "cat": "landscape"
+    },
+    {
+      "image": "after-6",
+      "alt": "Mulch bed along a house foundation around two air conditioners",
+      "caption": "Foundation mulch",
+      "cat": "landscape"
+    },
+    {
+      "image": "leaves",
+      "alt": "A pile of fallen leaves blown to the curb for haul-away, with a blower in the foreground",
+      "caption": "Leaf removal",
+      "cat": "cleanup"
+    },
+    {
+      "image": "stihl-leaves",
+      "alt": "Large leaf pile collected against a wooden fence for haul-away",
+      "caption": "Leaves collected for haul-away",
+      "cat": "cleanup"
+    },
+    {
+      "image": "aeration",
+      "alt": "Lawn surface with core aeration plugs left on the grass",
+      "caption": "Core aeration",
+      "cat": "lawn"
+    },
+    {
+      "image": "overseeding",
+      "alt": "Close view of young grass blades filling in a lawn",
+      "caption": "Overseeding",
+      "cat": "lawn"
+    },
+    {
+      "image": "snow-removal",
+      "alt": "Residential driveway cleared after a snow, with snow piled along the edge",
+      "caption": "Snow removal",
+      "cat": "snow"
+    },
+    {
+      "image": "after-2",
+      "alt": "Mulched bed under a shade tree next to a flagstone path",
+      "caption": "Shade-bed mulch",
+      "cat": "landscape"
+    },
+    {
+      "image": "before-5-fixed",
+      "alt": "Weedy side yard before rock was installed along a stone wall",
+      "caption": "Before a rock install",
+      "cat": "landscape"
+    },
+    {
+      "image": "after-3-fixed",
+      "alt": "Landscape bed after cleanup",
+      "caption": "Bed cleanup",
+      "cat": "cleanup"
+    }
+  ]
+}
